@@ -1,0 +1,122 @@
+/* Estilo para el muñeco del ahorcado */
+#hangman {
+    margin: 20px auto;
+    width: 200px;
+    height: 200px;
+    background-color: #333;
+    position: relative;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.head,
+.body,
+.left-arm,
+.right-arm,
+.left-leg,
+.right-leg {
+    background-color: #fff;
+    position: absolute;
+    border-radius: 50%;
+    transform: scale(0.9);
+    /* Ajusta el tamaño de las partes */
+}
+
+.head {
+    top: 5px;
+    width: 80px;
+    height: 80px;
+}
+
+.body {
+    top: 80px;
+    width: 20px;
+    height: 60px;
+}
+
+.left-arm,
+.right-arm {
+    top: 80px;
+    width: 5px;
+    height: 30px;
+}
+
+.left-arm {
+    left: 40px;
+    transform-origin: right center;
+    transform: rotate(45deg);
+    /* Gira el brazo izquierdo */
+}
+
+.right-arm {
+    left: 55px;
+    transform-origin: left center;
+    transform: rotate(-45deg);
+    /* Gira el brazo derecho */
+}
+
+.left-leg,
+.right-leg {
+    top: 140px;
+    width: 5px;
+    height: 30px;
+}
+
+.left-leg {
+    left: 40px;
+    transform-origin: right center;
+    transform: rotate(-45deg);
+    /* Gira la pierna izquierda */
+}
+
+.right-leg {
+    left: 55px;
+    transform-origin: left center;
+    transform: rotate(45deg);
+    /* Gira la pierna derecha */
+}
+
+/* Estilos adicionales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 400px;
+}
+
+#word-container {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+#letters {
+    margin-top: 20px;
+}
+
+#letters button {
+    font-size: 18px;
+    margin: 5px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#message {
+    font-size: 20px;
+    margin-top: 20px;
+}
